@@ -1,0 +1,103 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+header {
+    text-align: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+section {
+    padding: 20px;
+    margin: 20px;
+}
+
+#story {
+    text-align: center;
+}
+
+#storyImage {
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid #333;
+    margin-top: 10px;
+}
+
+#choices {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.choiceButton {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.choiceButton:hover {
+    background-color: #45a049;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-top: auto;
+}
+
+#addendum {
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #eef2f5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#addendum h2 {
+    text-align: center;
+    color: #333;
+}
+
+#addendum ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+#addendum p, #addendum ul {
+    font-size: 14px;
+    color: #555;
+}
+
+#addendum li {
+    margin-bottom: 10px;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    #story {
+        font-size: 1rem;
+    }
+
+    .choiceButton {
+        width: 150px;
+    }
+}

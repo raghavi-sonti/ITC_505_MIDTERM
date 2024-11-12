@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Harry Potter Adventure Game</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Harry Potter Adventure Game</h1>
+        <p>Make choices and navigate through the world of Harry Potter!</p>
+    </header>
+
+    <main>
+        <div id="story">
+            <!-- Story content will appear here -->
+        </div>
+
+        <div id="choices">
+            <!-- Choices will appear here -->
+        </div>
+
+        <div id="addendum">
+            <h2>Game Addendum</h2>
+            <p><strong>HTML Elements:</strong></p>
+            <ul>
+                <li><code>&lt;header&gt;</code>: Contains the title of the game and introductory text.</li>
+                <li><code>&lt;main&gt;</code>: Main content area where the story and choices are displayed.</li>
+                <li><code>&lt;div id="story"&gt;</code>: Displays the current stage's text and image.</li>
+                <li><code>&lt;div id="choices"&gt;</code>: Contains buttons for player choices at each stage.</li>
+                <li><code>&lt;div id="addendum"&gt;</code>: Shows additional details about the game elements and functions used.</li>
+                <li><code>&lt;footer&gt;</code>: Displays the last modified date of the page.</li>
+                <li><code>&lt;button&gt;</code>: Buttons for player choices or restarting the game.</li>
+                <li><code>&lt;script&gt;</code>: External JavaScript file containing the game logic.</li>
+            </ul>
+
+            <p><strong>JavaScript Functions:</strong></p>
+            <ul>
+                <li><code>startGame()</code>: Initializes the game and sets the starting stage to 'start'.</li>
+                <li><code>updatePage()</code>: Updates the HTML page with text, image, and choices based on the current stage.</li>
+                <li><code>document.addEventListener('DOMContentLoaded', startGame)</code>: Ensures the game starts once the DOM content is fully loaded.</li>
+                <li><code>document.getElementById('lastModified').textContent = document.lastModified</code>: Updates the footer with the last modified date.</li>
+            </ul>
+
+            <p><strong>CSS Elements:</strong></p>
+            <ul>
+                <li><code>body</code>: Sets the overall layout and background for the page.</li>
+                <li><code>#story</code>: Defines the area where the current stage's text and image are displayed.</li>
+                <li><code>#choices</code>: Contains the choice buttons aligned vertically.</li>
+                <li><code>.choiceButton</code>: Styles the choice buttons with padding, background color, and hover effects.</li>
+                <li><code>footer</code>: Styles and positions the footer, which contains the last modified date.</li>
+            </ul>
+
+            <p><strong>Image Assets:</strong></p>
+            <ul>
+                <li>"harry_potter.jpg", "hogwarts.jpg", "wand.jpg": Represent the images shown at various game stages. These images should be present in the same folder as the HTML file or the paths should be adjusted accordingly.</li>
+            </ul>
+
+            <p><strong>Event Handling:</strong></p>
+            <ul>
+                <li>Buttons are dynamically created based on the available choices and linked to the respective consequence stage.</li>
+                <li>When a button is clicked, the <code>currentStage</code> variable is updated and the page is re-rendered accordingly.</li>
+            </ul>
+
+            <p><strong>Restart Mechanism:</strong></p>
+            <ul>
+                <li>A "Restart" button appears when there are no further choices in the current stage, allowing the user to start the game over from the beginning.</li>
+            </ul>
+        </div>
+    </main>
+
+    <footer>
+        <p id="lastModified"></p>
+    </footer>
+
+    <script src="game.js"></script>
+</body>
+</html>
